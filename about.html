@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de Nous</title>
+
+    <style>
+        * {
+            list-style: none;
+        }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+}
+
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton menu mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+        /* About Page */
+.about-container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.about-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-section h2 {
+    color: #007bff;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #007bff;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">🚀 ArtisanGuinée</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="utilisateurs.html">Utilisateurs</a></li>
+            <li><a href="artisans.html">Artisans</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reservations.html">Réservations</a></li>
+            <li><a href="paiements.html">Paiements</a></li>
+            <li><a href="about.html">Véhicules</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">À propos</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    </header>
+
+    <main class="about-container">
+        <section id="about-content">
+            <div class="about-section">
+                <h2>Notre Mission</h2>
+                <p>Nous nous engageons à fournir les meilleurs services et produits à nos clients.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Notre Équipe</h2>
+                <p>Notre équipe est composée de professionnels passionnés et expérimentés.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Nos Valeurs</h2>
+                <ul>
+                    <li>Qualité</li>
+                    <li>Engagement</li>
+                    <li>Innovation</li>
+                    <li>Satisfaction client</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ArtisanGuinée - Yattara Ousmane Tous droits réservés</p>
+    </footer>
+    <script src="about.js"></script>
+</body>
+</html>
+
