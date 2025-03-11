@@ -3,16 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArtisanGuinée</title>
 
     <style>
-        body {
-            font-family: sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+}
+
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton menu mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
         .contact-form {
             margin-top: 20px;
@@ -30,7 +92,7 @@
         }
 
         .contact-form button {
-            background-color: #007bff;
+            background-color: #092503;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -42,6 +104,13 @@
             background-color: #0056b3;
         }
 
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 20px;
+        }
+        
+
         #dynamic-banner {
     height: 300px; /* Ajustez selon vos besoins */
     background-color: #222;
@@ -52,22 +121,53 @@
     font-size: 2em;
     /* Styles futuristes supplémentaires ici */
 }
+
+footer { background: linear-gradient(135deg, #007bff, #00c6ff);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
     </style>
 </head>
 <body>
-    <section id="dynamic-banner">
-        <!-- Bannière dynamique générée par JavaScript -->
-    </section>
+    <header>
+        <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">🚀 ArtisanGuinée</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="utilisateurs.html">Utilisateurs</a></li>
+            <li><a href="artisans.html">Artisans</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reservations.html">Réservations</a></li>
+            <li><a href="paiements.html">Paiements</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    </header>
 
-    <section class="contact-form">
-        <h2 class="section-title">Contactez-moi</h2>
-        <form>
-            <input type="text" placeholder="Votre Nom" required>
-            <input type="email" placeholder="Votre Email" required>
-            <textarea placeholder="Votre Message" rows="4" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
+    <main class="container">
+        <section id="dynamic-banner">
+            <!-- Bannière dynamique générée par JavaScript -->
+        </section>
+    
+        <section class="contact-form">
+            <h2 class="section-title">Contactez-moi</h2>
+            <form>
+                <input type="text" placeholder="Votre Nom" required>
+                <input type="email" placeholder="Votre Email" required>
+                <textarea placeholder="Votre Message" rows="4" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        
+    </main>
+    
     <footer>
         <p>&copy; 2025 ArtisanGuinée - Yattara Ousmane Tous droits réservés</p>
     </footer>
