@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisans & Services</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+                body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton menu mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('../images/hero-bg.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #007bff;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+footer { background: linear-gradient(135deg, #007bff, #00c6ff);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">🚀 MultiServices</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="utilisateurs.html">Utilisateurs</a></li>
+            <li><a href="artisans.html">Artisans</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reservations.html">Réservations</a></li>
+            <li><a href="paiements.html">Paiements</a></li>
+            <li><a href="vehicules.html">Véhicules</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">À propos</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Nos Artisans Qualifiés</h1>
+        <p>Trouvez le meilleur artisan pour vos besoins</p>
+    </section>
+
+    <main>
+        <table id="artisans-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Téléphone</th>
+                    <th>Photo</th>
+                    <th>Compétences</th>
+                    <th>Status</th>
+                    <th>ID Admin</th>
+                    <th>Date d'inscription</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données des artisans seront ajoutées ici -->
+                 
+            </tbody>
+            
+        </table>
+
+        <button>Voir Profil</button>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2025 ArtisanPlus. Tous droits réservés.</p>
+    </footer>
+
+    <script src="artisans.js"></script>
+</body>
+</html>
